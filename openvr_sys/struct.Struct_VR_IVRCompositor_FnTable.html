@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Struct_VR_IVRCompositor_FnTable` struct in crate `openvr_sys`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Struct_VR_IVRCompositor_FnTable">
+
+    <title>openvr_sys::Struct_VR_IVRCompositor_FnTable - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>openvr_sys</a></p><script>window.sidebarCurrent = {name: 'Struct_VR_IVRCompositor_FnTable', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>openvr_sys</a>::<wbr><a class='struct' href=''>Struct_VR_IVRCompositor_FnTable</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-1684' class='srclink' href='../src/openvr_sys/src/sys/lib.rs.html#1935-2022' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Struct_VR_IVRCompositor_FnTable {
+    pub SetTrackingSpace: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(eOrigin: <a class='type' href='../openvr_sys/type.ETrackingUniverseOrigin.html' title='openvr_sys::ETrackingUniverseOrigin'>ETrackingUniverseOrigin</a>)&gt;,
+    pub GetTrackingSpace: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn() -&gt; <a class='type' href='../openvr_sys/type.ETrackingUniverseOrigin.html' title='openvr_sys::ETrackingUniverseOrigin'>ETrackingUniverseOrigin</a>&gt;,
+    pub WaitGetPoses: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pRenderPoseArray: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='struct' href='../openvr_sys/struct.Struct_TrackedDevicePose_t.html' title='openvr_sys::Struct_TrackedDevicePose_t'>Struct_TrackedDevicePose_t</a>, unRenderPoseArrayCount: <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>, pGamePoseArray: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='struct' href='../openvr_sys/struct.Struct_TrackedDevicePose_t.html' title='openvr_sys::Struct_TrackedDevicePose_t'>Struct_TrackedDevicePose_t</a>, unGamePoseArrayCount: <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>) -&gt; <a class='type' href='../openvr_sys/type.EVRCompositorError.html' title='openvr_sys::EVRCompositorError'>EVRCompositorError</a>&gt;,
+    pub GetLastPoses: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pRenderPoseArray: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='struct' href='../openvr_sys/struct.Struct_TrackedDevicePose_t.html' title='openvr_sys::Struct_TrackedDevicePose_t'>Struct_TrackedDevicePose_t</a>, unRenderPoseArrayCount: <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>, pGamePoseArray: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='struct' href='../openvr_sys/struct.Struct_TrackedDevicePose_t.html' title='openvr_sys::Struct_TrackedDevicePose_t'>Struct_TrackedDevicePose_t</a>, unGamePoseArrayCount: <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>) -&gt; <a class='type' href='../openvr_sys/type.EVRCompositorError.html' title='openvr_sys::EVRCompositorError'>EVRCompositorError</a>&gt;,
+    pub GetLastPoseForTrackedDeviceIndex: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(unDeviceIndex: <a class='type' href='../openvr_sys/type.TrackedDeviceIndex_t.html' title='openvr_sys::TrackedDeviceIndex_t'>TrackedDeviceIndex_t</a>, pOutputPose: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='struct' href='../openvr_sys/struct.Struct_TrackedDevicePose_t.html' title='openvr_sys::Struct_TrackedDevicePose_t'>Struct_TrackedDevicePose_t</a>, pOutputGamePose: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='struct' href='../openvr_sys/struct.Struct_TrackedDevicePose_t.html' title='openvr_sys::Struct_TrackedDevicePose_t'>Struct_TrackedDevicePose_t</a>) -&gt; <a class='type' href='../openvr_sys/type.EVRCompositorError.html' title='openvr_sys::EVRCompositorError'>EVRCompositorError</a>&gt;,
+    pub Submit: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(eEye: <a class='type' href='../openvr_sys/type.EVREye.html' title='openvr_sys::EVREye'>EVREye</a>, pTexture: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='struct' href='../openvr_sys/struct.Struct_Texture_t.html' title='openvr_sys::Struct_Texture_t'>Struct_Texture_t</a>, pBounds: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='struct' href='../openvr_sys/struct.Struct_VRTextureBounds_t.html' title='openvr_sys::Struct_VRTextureBounds_t'>Struct_VRTextureBounds_t</a>, nSubmitFlags: <a class='type' href='../openvr_sys/type.EVRSubmitFlags.html' title='openvr_sys::EVRSubmitFlags'>EVRSubmitFlags</a>) -&gt; <a class='type' href='../openvr_sys/type.EVRCompositorError.html' title='openvr_sys::EVRCompositorError'>EVRCompositorError</a>&gt;,
+    pub ClearLastSubmittedFrame: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn()&gt;,
+    pub PostPresentHandoff: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn()&gt;,
+    pub GetFrameTiming: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pTiming: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='struct' href='../openvr_sys/struct.Struct_Compositor_FrameTiming.html' title='openvr_sys::Struct_Compositor_FrameTiming'>Struct_Compositor_FrameTiming</a>, unFramesAgo: <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;,
+    pub GetFrameTimeRemaining: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn() -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_float.html' title='std::os::raw::c_float'>c_float</a>&gt;,
+    pub FadeToColor: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(fSeconds: <a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_float.html' title='std::os::raw::c_float'>c_float</a>, fRed: <a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_float.html' title='std::os::raw::c_float'>c_float</a>, fGreen: <a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_float.html' title='std::os::raw::c_float'>c_float</a>, fBlue: <a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_float.html' title='std::os::raw::c_float'>c_float</a>, fAlpha: <a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_float.html' title='std::os::raw::c_float'>c_float</a>, bBackground: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>)&gt;,
+    pub FadeGrid: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(fSeconds: <a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_float.html' title='std::os::raw::c_float'>c_float</a>, bFadeIn: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>)&gt;,
+    pub SetSkyboxOverride: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pTextures: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='struct' href='../openvr_sys/struct.Struct_Texture_t.html' title='openvr_sys::Struct_Texture_t'>Struct_Texture_t</a>, unTextureCount: <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>) -&gt; <a class='type' href='../openvr_sys/type.EVRCompositorError.html' title='openvr_sys::EVRCompositorError'>EVRCompositorError</a>&gt;,
+    pub ClearSkyboxOverride: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn()&gt;,
+    pub CompositorBringToFront: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn()&gt;,
+    pub CompositorGoToBack: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn()&gt;,
+    pub CompositorQuit: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn()&gt;,
+    pub IsFullscreen: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn() -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;,
+    pub GetCurrentSceneFocusProcess: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn() -&gt; <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>&gt;,
+    pub GetLastFrameRenderer: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn() -&gt; <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>&gt;,
+    pub CanRenderScene: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn() -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;,
+    pub ShowMirrorWindow: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn()&gt;,
+    pub HideMirrorWindow: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn()&gt;,
+    pub IsMirrorWindowVisible: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn() -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;,
+    pub CompositorDumpImages: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn()&gt;,
+    pub ShouldAppRenderWithLowResources: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn() -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;,
+    pub ForceInterleavedReprojectionOn: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(bOverride: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>)&gt;,
+}</pre><h2 class='fields'>Fields</h2>
+<table><tr class='stab '>
+                             <td id='structfield.SetTrackingSpace'><code>SetTrackingSpace</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetTrackingSpace'><code>GetTrackingSpace</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.WaitGetPoses'><code>WaitGetPoses</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetLastPoses'><code>GetLastPoses</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetLastPoseForTrackedDeviceIndex'><code>GetLastPoseForTrackedDeviceIndex</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.Submit'><code>Submit</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.ClearLastSubmittedFrame'><code>ClearLastSubmittedFrame</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.PostPresentHandoff'><code>PostPresentHandoff</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetFrameTiming'><code>GetFrameTiming</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetFrameTimeRemaining'><code>GetFrameTimeRemaining</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.FadeToColor'><code>FadeToColor</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.FadeGrid'><code>FadeGrid</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.SetSkyboxOverride'><code>SetSkyboxOverride</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.ClearSkyboxOverride'><code>ClearSkyboxOverride</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.CompositorBringToFront'><code>CompositorBringToFront</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.CompositorGoToBack'><code>CompositorGoToBack</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.CompositorQuit'><code>CompositorQuit</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.IsFullscreen'><code>IsFullscreen</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetCurrentSceneFocusProcess'><code>GetCurrentSceneFocusProcess</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetLastFrameRenderer'><code>GetLastFrameRenderer</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.CanRenderScene'><code>CanRenderScene</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.ShowMirrorWindow'><code>ShowMirrorWindow</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.HideMirrorWindow'><code>HideMirrorWindow</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.IsMirrorWindowVisible'><code>IsMirrorWindowVisible</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.CompositorDumpImages'><code>CompositorDumpImages</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.ShouldAppRenderWithLowResources'><code>ShouldAppRenderWithLowResources</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.ForceInterleavedReprojectionOn'><code>ForceInterleavedReprojectionOn</code></td><td></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../openvr_sys/struct.Struct_VR_IVRCompositor_FnTable.html' title='openvr_sys::Struct_VR_IVRCompositor_FnTable'>Struct_VR_IVRCompositor_FnTable</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; Self</code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><span class="since">1.0.0</span></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../openvr_sys/struct.Struct_VR_IVRCompositor_FnTable.html' title='openvr_sys::Struct_VR_IVRCompositor_FnTable'>Struct_VR_IVRCompositor_FnTable</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; Self</code></h4>
+</div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='struct' href='../openvr_sys/struct.Struct_VR_IVRCompositor_FnTable.html' title='openvr_sys::Struct_VR_IVRCompositor_FnTable'>Struct_VR_IVRCompositor_FnTable</a></code></h3><div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "openvr_sys";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

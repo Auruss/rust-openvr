@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Enum_ETrackedDeviceProperty` enum in crate `openvr_sys`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Enum_ETrackedDeviceProperty">
+
+    <title>openvr_sys::Enum_ETrackedDeviceProperty - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>openvr_sys</a></p><script>window.sidebarCurrent = {name: 'Enum_ETrackedDeviceProperty', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content enum">
+<h1 class='fqn'><span class='in-band'>Enum <a href='index.html'>openvr_sys</a>::<wbr><a class='enum' href=''>Enum_ETrackedDeviceProperty</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-107' class='srclink' href='../src/openvr_sys/src/sys/lib.rs.html#91-173' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'>pub enum Enum_ETrackedDeviceProperty {
+    ETrackedDeviceProperty_Prop_TrackingSystemName_String,
+    ETrackedDeviceProperty_Prop_ModelNumber_String,
+    ETrackedDeviceProperty_Prop_SerialNumber_String,
+    ETrackedDeviceProperty_Prop_RenderModelName_String,
+    ETrackedDeviceProperty_Prop_WillDriftInYaw_Bool,
+    ETrackedDeviceProperty_Prop_ManufacturerName_String,
+    ETrackedDeviceProperty_Prop_TrackingFirmwareVersion_String,
+    ETrackedDeviceProperty_Prop_HardwareRevision_String,
+    ETrackedDeviceProperty_Prop_AllWirelessDongleDescriptions_String,
+    ETrackedDeviceProperty_Prop_ConnectedWirelessDongle_String,
+    ETrackedDeviceProperty_Prop_DeviceIsWireless_Bool,
+    ETrackedDeviceProperty_Prop_DeviceIsCharging_Bool,
+    ETrackedDeviceProperty_Prop_DeviceBatteryPercentage_Float,
+    ETrackedDeviceProperty_Prop_StatusDisplayTransform_Matrix34,
+    ETrackedDeviceProperty_Prop_Firmware_UpdateAvailable_Bool,
+    ETrackedDeviceProperty_Prop_Firmware_ManualUpdate_Bool,
+    ETrackedDeviceProperty_Prop_Firmware_ManualUpdateURL_String,
+    ETrackedDeviceProperty_Prop_HardwareRevision_Uint64,
+    ETrackedDeviceProperty_Prop_FirmwareVersion_Uint64,
+    ETrackedDeviceProperty_Prop_FPGAVersion_Uint64,
+    ETrackedDeviceProperty_Prop_VRCVersion_Uint64,
+    ETrackedDeviceProperty_Prop_RadioVersion_Uint64,
+    ETrackedDeviceProperty_Prop_DongleVersion_Uint64,
+    ETrackedDeviceProperty_Prop_BlockServerShutdown_Bool,
+    ETrackedDeviceProperty_Prop_CanUnifyCoordinateSystemWithHmd_Bool,
+    ETrackedDeviceProperty_Prop_ContainsProximitySensor_Bool,
+    ETrackedDeviceProperty_Prop_DeviceProvidesBatteryStatus_Bool,
+    ETrackedDeviceProperty_Prop_DeviceCanPowerOff_Bool,
+    ETrackedDeviceProperty_Prop_Firmware_ProgrammingTarget_String,
+    ETrackedDeviceProperty_Prop_DeviceClass_Int32,
+    ETrackedDeviceProperty_Prop_HasCamera_Bool,
+    ETrackedDeviceProperty_Prop_ReportsTimeSinceVSync_Bool,
+    ETrackedDeviceProperty_Prop_SecondsFromVsyncToPhotons_Float,
+    ETrackedDeviceProperty_Prop_DisplayFrequency_Float,
+    ETrackedDeviceProperty_Prop_UserIpdMeters_Float,
+    ETrackedDeviceProperty_Prop_CurrentUniverseId_Uint64,
+    ETrackedDeviceProperty_Prop_PreviousUniverseId_Uint64,
+    ETrackedDeviceProperty_Prop_DisplayFirmwareVersion_Uint64,
+    ETrackedDeviceProperty_Prop_IsOnDesktop_Bool,
+    ETrackedDeviceProperty_Prop_DisplayMCType_Int32,
+    ETrackedDeviceProperty_Prop_DisplayMCOffset_Float,
+    ETrackedDeviceProperty_Prop_DisplayMCScale_Float,
+    ETrackedDeviceProperty_Prop_EdidVendorID_Int32,
+    ETrackedDeviceProperty_Prop_DisplayMCImageLeft_String,
+    ETrackedDeviceProperty_Prop_DisplayMCImageRight_String,
+    ETrackedDeviceProperty_Prop_DisplayGCBlackClamp_Float,
+    ETrackedDeviceProperty_Prop_EdidProductID_Int32,
+    ETrackedDeviceProperty_Prop_CameraToHeadTransform_Matrix34,
+    ETrackedDeviceProperty_Prop_DisplayGCType_Int32,
+    ETrackedDeviceProperty_Prop_DisplayGCOffset_Float,
+    ETrackedDeviceProperty_Prop_DisplayGCScale_Float,
+    ETrackedDeviceProperty_Prop_DisplayGCPrescale_Float,
+    ETrackedDeviceProperty_Prop_DisplayGCImage_String,
+    ETrackedDeviceProperty_Prop_LensCenterLeftU_Float,
+    ETrackedDeviceProperty_Prop_LensCenterLeftV_Float,
+    ETrackedDeviceProperty_Prop_LensCenterRightU_Float,
+    ETrackedDeviceProperty_Prop_LensCenterRightV_Float,
+    ETrackedDeviceProperty_Prop_UserHeadToEyeDepthMeters_Float,
+    ETrackedDeviceProperty_Prop_CameraFirmwareVersion_Uint64,
+    ETrackedDeviceProperty_Prop_CameraFirmwareDescription_String,
+    ETrackedDeviceProperty_Prop_DisplayFPGAVersion_Uint64,
+    ETrackedDeviceProperty_Prop_DisplayBootloaderVersion_Uint64,
+    ETrackedDeviceProperty_Prop_DisplayHardwareVersion_Uint64,
+    ETrackedDeviceProperty_Prop_AudioFirmwareVersion_Uint64,
+    ETrackedDeviceProperty_Prop_CameraCompatibilityMode_Int32,
+    ETrackedDeviceProperty_Prop_AttachedDeviceId_String,
+    ETrackedDeviceProperty_Prop_SupportedButtons_Uint64,
+    ETrackedDeviceProperty_Prop_Axis0Type_Int32,
+    ETrackedDeviceProperty_Prop_Axis1Type_Int32,
+    ETrackedDeviceProperty_Prop_Axis2Type_Int32,
+    ETrackedDeviceProperty_Prop_Axis3Type_Int32,
+    ETrackedDeviceProperty_Prop_Axis4Type_Int32,
+    ETrackedDeviceProperty_Prop_FieldOfViewLeftDegrees_Float,
+    ETrackedDeviceProperty_Prop_FieldOfViewRightDegrees_Float,
+    ETrackedDeviceProperty_Prop_FieldOfViewTopDegrees_Float,
+    ETrackedDeviceProperty_Prop_FieldOfViewBottomDegrees_Float,
+    ETrackedDeviceProperty_Prop_TrackingRangeMinimumMeters_Float,
+    ETrackedDeviceProperty_Prop_TrackingRangeMaximumMeters_Float,
+    ETrackedDeviceProperty_Prop_ModeLabel_String,
+    ETrackedDeviceProperty_Prop_VendorSpecific_Reserved_Start,
+    ETrackedDeviceProperty_Prop_VendorSpecific_Reserved_End,
+}</pre><h2 class='variants'>Variants</h2>
+<table class='variants_table'><tr><td id='variant.ETrackedDeviceProperty_Prop_TrackingSystemName_String'><code>ETrackedDeviceProperty_Prop_TrackingSystemName_String</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_ModelNumber_String'><code>ETrackedDeviceProperty_Prop_ModelNumber_String</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_SerialNumber_String'><code>ETrackedDeviceProperty_Prop_SerialNumber_String</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_RenderModelName_String'><code>ETrackedDeviceProperty_Prop_RenderModelName_String</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_WillDriftInYaw_Bool'><code>ETrackedDeviceProperty_Prop_WillDriftInYaw_Bool</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_ManufacturerName_String'><code>ETrackedDeviceProperty_Prop_ManufacturerName_String</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_TrackingFirmwareVersion_String'><code>ETrackedDeviceProperty_Prop_TrackingFirmwareVersion_String</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_HardwareRevision_String'><code>ETrackedDeviceProperty_Prop_HardwareRevision_String</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_AllWirelessDongleDescriptions_String'><code>ETrackedDeviceProperty_Prop_AllWirelessDongleDescriptions_String</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_ConnectedWirelessDongle_String'><code>ETrackedDeviceProperty_Prop_ConnectedWirelessDongle_String</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DeviceIsWireless_Bool'><code>ETrackedDeviceProperty_Prop_DeviceIsWireless_Bool</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DeviceIsCharging_Bool'><code>ETrackedDeviceProperty_Prop_DeviceIsCharging_Bool</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DeviceBatteryPercentage_Float'><code>ETrackedDeviceProperty_Prop_DeviceBatteryPercentage_Float</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_StatusDisplayTransform_Matrix34'><code>ETrackedDeviceProperty_Prop_StatusDisplayTransform_Matrix34</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_Firmware_UpdateAvailable_Bool'><code>ETrackedDeviceProperty_Prop_Firmware_UpdateAvailable_Bool</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_Firmware_ManualUpdate_Bool'><code>ETrackedDeviceProperty_Prop_Firmware_ManualUpdate_Bool</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_Firmware_ManualUpdateURL_String'><code>ETrackedDeviceProperty_Prop_Firmware_ManualUpdateURL_String</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_HardwareRevision_Uint64'><code>ETrackedDeviceProperty_Prop_HardwareRevision_Uint64</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_FirmwareVersion_Uint64'><code>ETrackedDeviceProperty_Prop_FirmwareVersion_Uint64</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_FPGAVersion_Uint64'><code>ETrackedDeviceProperty_Prop_FPGAVersion_Uint64</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_VRCVersion_Uint64'><code>ETrackedDeviceProperty_Prop_VRCVersion_Uint64</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_RadioVersion_Uint64'><code>ETrackedDeviceProperty_Prop_RadioVersion_Uint64</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DongleVersion_Uint64'><code>ETrackedDeviceProperty_Prop_DongleVersion_Uint64</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_BlockServerShutdown_Bool'><code>ETrackedDeviceProperty_Prop_BlockServerShutdown_Bool</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_CanUnifyCoordinateSystemWithHmd_Bool'><code>ETrackedDeviceProperty_Prop_CanUnifyCoordinateSystemWithHmd_Bool</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_ContainsProximitySensor_Bool'><code>ETrackedDeviceProperty_Prop_ContainsProximitySensor_Bool</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DeviceProvidesBatteryStatus_Bool'><code>ETrackedDeviceProperty_Prop_DeviceProvidesBatteryStatus_Bool</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DeviceCanPowerOff_Bool'><code>ETrackedDeviceProperty_Prop_DeviceCanPowerOff_Bool</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_Firmware_ProgrammingTarget_String'><code>ETrackedDeviceProperty_Prop_Firmware_ProgrammingTarget_String</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DeviceClass_Int32'><code>ETrackedDeviceProperty_Prop_DeviceClass_Int32</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_HasCamera_Bool'><code>ETrackedDeviceProperty_Prop_HasCamera_Bool</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_ReportsTimeSinceVSync_Bool'><code>ETrackedDeviceProperty_Prop_ReportsTimeSinceVSync_Bool</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_SecondsFromVsyncToPhotons_Float'><code>ETrackedDeviceProperty_Prop_SecondsFromVsyncToPhotons_Float</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DisplayFrequency_Float'><code>ETrackedDeviceProperty_Prop_DisplayFrequency_Float</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_UserIpdMeters_Float'><code>ETrackedDeviceProperty_Prop_UserIpdMeters_Float</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_CurrentUniverseId_Uint64'><code>ETrackedDeviceProperty_Prop_CurrentUniverseId_Uint64</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_PreviousUniverseId_Uint64'><code>ETrackedDeviceProperty_Prop_PreviousUniverseId_Uint64</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DisplayFirmwareVersion_Uint64'><code>ETrackedDeviceProperty_Prop_DisplayFirmwareVersion_Uint64</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_IsOnDesktop_Bool'><code>ETrackedDeviceProperty_Prop_IsOnDesktop_Bool</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DisplayMCType_Int32'><code>ETrackedDeviceProperty_Prop_DisplayMCType_Int32</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DisplayMCOffset_Float'><code>ETrackedDeviceProperty_Prop_DisplayMCOffset_Float</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DisplayMCScale_Float'><code>ETrackedDeviceProperty_Prop_DisplayMCScale_Float</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_EdidVendorID_Int32'><code>ETrackedDeviceProperty_Prop_EdidVendorID_Int32</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DisplayMCImageLeft_String'><code>ETrackedDeviceProperty_Prop_DisplayMCImageLeft_String</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DisplayMCImageRight_String'><code>ETrackedDeviceProperty_Prop_DisplayMCImageRight_String</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DisplayGCBlackClamp_Float'><code>ETrackedDeviceProperty_Prop_DisplayGCBlackClamp_Float</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_EdidProductID_Int32'><code>ETrackedDeviceProperty_Prop_EdidProductID_Int32</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_CameraToHeadTransform_Matrix34'><code>ETrackedDeviceProperty_Prop_CameraToHeadTransform_Matrix34</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DisplayGCType_Int32'><code>ETrackedDeviceProperty_Prop_DisplayGCType_Int32</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DisplayGCOffset_Float'><code>ETrackedDeviceProperty_Prop_DisplayGCOffset_Float</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DisplayGCScale_Float'><code>ETrackedDeviceProperty_Prop_DisplayGCScale_Float</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DisplayGCPrescale_Float'><code>ETrackedDeviceProperty_Prop_DisplayGCPrescale_Float</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DisplayGCImage_String'><code>ETrackedDeviceProperty_Prop_DisplayGCImage_String</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_LensCenterLeftU_Float'><code>ETrackedDeviceProperty_Prop_LensCenterLeftU_Float</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_LensCenterLeftV_Float'><code>ETrackedDeviceProperty_Prop_LensCenterLeftV_Float</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_LensCenterRightU_Float'><code>ETrackedDeviceProperty_Prop_LensCenterRightU_Float</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_LensCenterRightV_Float'><code>ETrackedDeviceProperty_Prop_LensCenterRightV_Float</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_UserHeadToEyeDepthMeters_Float'><code>ETrackedDeviceProperty_Prop_UserHeadToEyeDepthMeters_Float</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_CameraFirmwareVersion_Uint64'><code>ETrackedDeviceProperty_Prop_CameraFirmwareVersion_Uint64</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_CameraFirmwareDescription_String'><code>ETrackedDeviceProperty_Prop_CameraFirmwareDescription_String</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DisplayFPGAVersion_Uint64'><code>ETrackedDeviceProperty_Prop_DisplayFPGAVersion_Uint64</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DisplayBootloaderVersion_Uint64'><code>ETrackedDeviceProperty_Prop_DisplayBootloaderVersion_Uint64</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_DisplayHardwareVersion_Uint64'><code>ETrackedDeviceProperty_Prop_DisplayHardwareVersion_Uint64</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_AudioFirmwareVersion_Uint64'><code>ETrackedDeviceProperty_Prop_AudioFirmwareVersion_Uint64</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_CameraCompatibilityMode_Int32'><code>ETrackedDeviceProperty_Prop_CameraCompatibilityMode_Int32</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_AttachedDeviceId_String'><code>ETrackedDeviceProperty_Prop_AttachedDeviceId_String</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_SupportedButtons_Uint64'><code>ETrackedDeviceProperty_Prop_SupportedButtons_Uint64</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_Axis0Type_Int32'><code>ETrackedDeviceProperty_Prop_Axis0Type_Int32</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_Axis1Type_Int32'><code>ETrackedDeviceProperty_Prop_Axis1Type_Int32</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_Axis2Type_Int32'><code>ETrackedDeviceProperty_Prop_Axis2Type_Int32</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_Axis3Type_Int32'><code>ETrackedDeviceProperty_Prop_Axis3Type_Int32</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_Axis4Type_Int32'><code>ETrackedDeviceProperty_Prop_Axis4Type_Int32</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_FieldOfViewLeftDegrees_Float'><code>ETrackedDeviceProperty_Prop_FieldOfViewLeftDegrees_Float</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_FieldOfViewRightDegrees_Float'><code>ETrackedDeviceProperty_Prop_FieldOfViewRightDegrees_Float</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_FieldOfViewTopDegrees_Float'><code>ETrackedDeviceProperty_Prop_FieldOfViewTopDegrees_Float</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_FieldOfViewBottomDegrees_Float'><code>ETrackedDeviceProperty_Prop_FieldOfViewBottomDegrees_Float</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_TrackingRangeMinimumMeters_Float'><code>ETrackedDeviceProperty_Prop_TrackingRangeMinimumMeters_Float</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_TrackingRangeMaximumMeters_Float'><code>ETrackedDeviceProperty_Prop_TrackingRangeMaximumMeters_Float</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_ModeLabel_String'><code>ETrackedDeviceProperty_Prop_ModeLabel_String</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_VendorSpecific_Reserved_Start'><code>ETrackedDeviceProperty_Prop_VendorSpecific_Reserved_Start</code></td><td></td><td></td></tr><tr><td id='variant.ETrackedDeviceProperty_Prop_VendorSpecific_Reserved_End'><code>ETrackedDeviceProperty_Prop_VendorSpecific_Reserved_End</code></td><td></td><td></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='enum' href='../openvr_sys/enum.Enum_ETrackedDeviceProperty.html' title='openvr_sys::Enum_ETrackedDeviceProperty'>Enum_ETrackedDeviceProperty</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='enum' href='../openvr_sys/enum.Enum_ETrackedDeviceProperty.html' title='openvr_sys::Enum_ETrackedDeviceProperty'>Enum_ETrackedDeviceProperty</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='enum' href='../openvr_sys/enum.Enum_ETrackedDeviceProperty.html' title='openvr_sys::Enum_ETrackedDeviceProperty'>Enum_ETrackedDeviceProperty</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><span class="since">1.0.0</span></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "openvr_sys";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

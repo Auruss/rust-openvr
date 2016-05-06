@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Struct_VR_IVRApplications_FnTable` struct in crate `openvr_sys`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Struct_VR_IVRApplications_FnTable">
+
+    <title>openvr_sys::Struct_VR_IVRApplications_FnTable - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>openvr_sys</a></p><script>window.sidebarCurrent = {name: 'Struct_VR_IVRApplications_FnTable', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>openvr_sys</a>::<wbr><a class='struct' href=''>Struct_VR_IVRApplications_FnTable</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-1530' class='srclink' href='../src/openvr_sys/src/sys/lib.rs.html#1679-1805' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Struct_VR_IVRApplications_FnTable {
+    pub AddApplicationManifest: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pchApplicationManifestFullPath: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>, bTemporary: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>) -&gt; <a class='type' href='../openvr_sys/type.EVRApplicationError.html' title='openvr_sys::EVRApplicationError'>EVRApplicationError</a>&gt;,
+    pub RemoveApplicationManifest: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pchApplicationManifestFullPath: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>) -&gt; <a class='type' href='../openvr_sys/type.EVRApplicationError.html' title='openvr_sys::EVRApplicationError'>EVRApplicationError</a>&gt;,
+    pub IsApplicationInstalled: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pchAppKey: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;,
+    pub GetApplicationCount: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn() -&gt; <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>&gt;,
+    pub GetApplicationKeyByIndex: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(unApplicationIndex: <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>, pchAppKeyBuffer: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>, unAppKeyBufferLen: <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>) -&gt; <a class='type' href='../openvr_sys/type.EVRApplicationError.html' title='openvr_sys::EVRApplicationError'>EVRApplicationError</a>&gt;,
+    pub GetApplicationKeyByProcessId: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(unProcessId: <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>, pchAppKeyBuffer: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>, unAppKeyBufferLen: <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>) -&gt; <a class='type' href='../openvr_sys/type.EVRApplicationError.html' title='openvr_sys::EVRApplicationError'>EVRApplicationError</a>&gt;,
+    pub LaunchApplication: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pchAppKey: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>) -&gt; <a class='type' href='../openvr_sys/type.EVRApplicationError.html' title='openvr_sys::EVRApplicationError'>EVRApplicationError</a>&gt;,
+    pub LaunchTemplateApplication: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pchTemplateAppKey: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>, pchNewAppKey: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>, pKeys: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='struct' href='../openvr_sys/struct.Struct_AppOverrideKeys_t.html' title='openvr_sys::Struct_AppOverrideKeys_t'>Struct_AppOverrideKeys_t</a>, unKeys: <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>) -&gt; <a class='type' href='../openvr_sys/type.EVRApplicationError.html' title='openvr_sys::EVRApplicationError'>EVRApplicationError</a>&gt;,
+    pub LaunchDashboardOverlay: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pchAppKey: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>) -&gt; <a class='type' href='../openvr_sys/type.EVRApplicationError.html' title='openvr_sys::EVRApplicationError'>EVRApplicationError</a>&gt;,
+    pub CancelApplicationLaunch: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pchAppKey: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;,
+    pub IdentifyApplication: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(unProcessId: <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>, pchAppKey: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>) -&gt; <a class='type' href='../openvr_sys/type.EVRApplicationError.html' title='openvr_sys::EVRApplicationError'>EVRApplicationError</a>&gt;,
+    pub GetApplicationProcessId: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pchAppKey: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>) -&gt; <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>&gt;,
+    pub GetApplicationsErrorNameFromEnum: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(error: <a class='type' href='../openvr_sys/type.EVRApplicationError.html' title='openvr_sys::EVRApplicationError'>EVRApplicationError</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>&gt;,
+    pub GetApplicationPropertyString: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pchAppKey: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>, eProperty: <a class='type' href='../openvr_sys/type.EVRApplicationProperty.html' title='openvr_sys::EVRApplicationProperty'>EVRApplicationProperty</a>, pchPropertyValueBuffer: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>, unPropertyValueBufferLen: <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>, peError: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='../openvr_sys/type.EVRApplicationError.html' title='openvr_sys::EVRApplicationError'>EVRApplicationError</a>) -&gt; <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>&gt;,
+    pub GetApplicationPropertyBool: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pchAppKey: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>, eProperty: <a class='type' href='../openvr_sys/type.EVRApplicationProperty.html' title='openvr_sys::EVRApplicationProperty'>EVRApplicationProperty</a>, peError: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='../openvr_sys/type.EVRApplicationError.html' title='openvr_sys::EVRApplicationError'>EVRApplicationError</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;,
+    pub GetApplicationPropertyUint64: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pchAppKey: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>, eProperty: <a class='type' href='../openvr_sys/type.EVRApplicationProperty.html' title='openvr_sys::EVRApplicationProperty'>EVRApplicationProperty</a>, peError: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='../openvr_sys/type.EVRApplicationError.html' title='openvr_sys::EVRApplicationError'>EVRApplicationError</a>) -&gt; <a class='type' href='../openvr_sys/type.uint64_t.html' title='openvr_sys::uint64_t'>uint64_t</a>&gt;,
+    pub SetApplicationAutoLaunch: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pchAppKey: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>, bAutoLaunch: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>) -&gt; <a class='type' href='../openvr_sys/type.EVRApplicationError.html' title='openvr_sys::EVRApplicationError'>EVRApplicationError</a>&gt;,
+    pub GetApplicationAutoLaunch: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pchAppKey: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;,
+    pub GetStartingApplication: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pchAppKeyBuffer: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>, unAppKeyBufferLen: <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>) -&gt; <a class='type' href='../openvr_sys/type.EVRApplicationError.html' title='openvr_sys::EVRApplicationError'>EVRApplicationError</a>&gt;,
+    pub GetTransitionState: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn() -&gt; <a class='type' href='../openvr_sys/type.EVRApplicationTransitionState.html' title='openvr_sys::EVRApplicationTransitionState'>EVRApplicationTransitionState</a>&gt;,
+    pub PerformApplicationPrelaunchCheck: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pchAppKey: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>) -&gt; <a class='type' href='../openvr_sys/type.EVRApplicationError.html' title='openvr_sys::EVRApplicationError'>EVRApplicationError</a>&gt;,
+    pub GetApplicationsTransitionStateNameFromEnum: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(state: <a class='type' href='../openvr_sys/type.EVRApplicationTransitionState.html' title='openvr_sys::EVRApplicationTransitionState'>EVRApplicationTransitionState</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>&gt;,
+    pub IsQuitUserPromptRequested: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn() -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;,
+    pub LaunchInternalProcess: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pchBinaryPath: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>, pchArguments: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>, pchWorkingDirectory: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>) -&gt; <a class='type' href='../openvr_sys/type.EVRApplicationError.html' title='openvr_sys::EVRApplicationError'>EVRApplicationError</a>&gt;,
+}</pre><h2 class='fields'>Fields</h2>
+<table><tr class='stab '>
+                             <td id='structfield.AddApplicationManifest'><code>AddApplicationManifest</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.RemoveApplicationManifest'><code>RemoveApplicationManifest</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.IsApplicationInstalled'><code>IsApplicationInstalled</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetApplicationCount'><code>GetApplicationCount</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetApplicationKeyByIndex'><code>GetApplicationKeyByIndex</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetApplicationKeyByProcessId'><code>GetApplicationKeyByProcessId</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.LaunchApplication'><code>LaunchApplication</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.LaunchTemplateApplication'><code>LaunchTemplateApplication</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.LaunchDashboardOverlay'><code>LaunchDashboardOverlay</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.CancelApplicationLaunch'><code>CancelApplicationLaunch</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.IdentifyApplication'><code>IdentifyApplication</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetApplicationProcessId'><code>GetApplicationProcessId</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetApplicationsErrorNameFromEnum'><code>GetApplicationsErrorNameFromEnum</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetApplicationPropertyString'><code>GetApplicationPropertyString</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetApplicationPropertyBool'><code>GetApplicationPropertyBool</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetApplicationPropertyUint64'><code>GetApplicationPropertyUint64</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.SetApplicationAutoLaunch'><code>SetApplicationAutoLaunch</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetApplicationAutoLaunch'><code>GetApplicationAutoLaunch</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetStartingApplication'><code>GetStartingApplication</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetTransitionState'><code>GetTransitionState</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.PerformApplicationPrelaunchCheck'><code>PerformApplicationPrelaunchCheck</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetApplicationsTransitionStateNameFromEnum'><code>GetApplicationsTransitionStateNameFromEnum</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.IsQuitUserPromptRequested'><code>IsQuitUserPromptRequested</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.LaunchInternalProcess'><code>LaunchInternalProcess</code></td><td></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../openvr_sys/struct.Struct_VR_IVRApplications_FnTable.html' title='openvr_sys::Struct_VR_IVRApplications_FnTable'>Struct_VR_IVRApplications_FnTable</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; Self</code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><span class="since">1.0.0</span></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../openvr_sys/struct.Struct_VR_IVRApplications_FnTable.html' title='openvr_sys::Struct_VR_IVRApplications_FnTable'>Struct_VR_IVRApplications_FnTable</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; Self</code></h4>
+</div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='struct' href='../openvr_sys/struct.Struct_VR_IVRApplications_FnTable.html' title='openvr_sys::Struct_VR_IVRApplications_FnTable'>Struct_VR_IVRApplications_FnTable</a></code></h3><div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "openvr_sys";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

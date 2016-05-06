@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Struct_VR_IVRSystem_FnTable` struct in crate `openvr_sys`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Struct_VR_IVRSystem_FnTable">
+
+    <title>openvr_sys::Struct_VR_IVRSystem_FnTable - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>openvr_sys</a></p><script>window.sidebarCurrent = {name: 'Struct_VR_IVRSystem_FnTable', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>openvr_sys</a>::<wbr><a class='struct' href=''>Struct_VR_IVRSystem_FnTable</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-1378' class='srclink' href='../src/openvr_sys/src/sys/lib.rs.html#1418-1638' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Struct_VR_IVRSystem_FnTable {
+    pub GetRecommendedRenderTargetSize: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pnWidth: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>, pnHeight: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>)&gt;,
+    pub GetProjectionMatrix: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(eEye: <a class='type' href='../openvr_sys/type.EVREye.html' title='openvr_sys::EVREye'>EVREye</a>, fNearZ: <a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_float.html' title='std::os::raw::c_float'>c_float</a>, fFarZ: <a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_float.html' title='std::os::raw::c_float'>c_float</a>, eProjType: <a class='type' href='../openvr_sys/type.EGraphicsAPIConvention.html' title='openvr_sys::EGraphicsAPIConvention'>EGraphicsAPIConvention</a>) -&gt; <a class='struct' href='../openvr_sys/struct.Struct_HmdMatrix44_t.html' title='openvr_sys::Struct_HmdMatrix44_t'>Struct_HmdMatrix44_t</a>&gt;,
+    pub GetProjectionRaw: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(eEye: <a class='type' href='../openvr_sys/type.EVREye.html' title='openvr_sys::EVREye'>EVREye</a>, pfLeft: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_float.html' title='std::os::raw::c_float'>c_float</a>, pfRight: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_float.html' title='std::os::raw::c_float'>c_float</a>, pfTop: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_float.html' title='std::os::raw::c_float'>c_float</a>, pfBottom: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_float.html' title='std::os::raw::c_float'>c_float</a>)&gt;,
+    pub ComputeDistortion: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(eEye: <a class='type' href='../openvr_sys/type.EVREye.html' title='openvr_sys::EVREye'>EVREye</a>, fU: <a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_float.html' title='std::os::raw::c_float'>c_float</a>, fV: <a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_float.html' title='std::os::raw::c_float'>c_float</a>) -&gt; <a class='struct' href='../openvr_sys/struct.Struct_DistortionCoordinates_t.html' title='openvr_sys::Struct_DistortionCoordinates_t'>Struct_DistortionCoordinates_t</a>&gt;,
+    pub GetEyeToHeadTransform: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(eEye: <a class='type' href='../openvr_sys/type.EVREye.html' title='openvr_sys::EVREye'>EVREye</a>) -&gt; <a class='struct' href='../openvr_sys/struct.Struct_HmdMatrix34_t.html' title='openvr_sys::Struct_HmdMatrix34_t'>Struct_HmdMatrix34_t</a>&gt;,
+    pub GetTimeSinceLastVsync: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pfSecondsSinceLastVsync: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_float.html' title='std::os::raw::c_float'>c_float</a>, pulFrameCounter: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='../openvr_sys/type.uint64_t.html' title='openvr_sys::uint64_t'>uint64_t</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;,
+    pub GetD3D9AdapterIndex: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn() -&gt; <a class='type' href='../openvr_sys/type.int32_t.html' title='openvr_sys::int32_t'>int32_t</a>&gt;,
+    pub GetDXGIOutputInfo: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pnAdapterIndex: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='../openvr_sys/type.int32_t.html' title='openvr_sys::int32_t'>int32_t</a>)&gt;,
+    pub IsDisplayOnDesktop: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn() -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;,
+    pub SetDisplayVisibility: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(bIsVisibleOnDesktop: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;,
+    pub GetDeviceToAbsoluteTrackingPose: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(eOrigin: <a class='type' href='../openvr_sys/type.ETrackingUniverseOrigin.html' title='openvr_sys::ETrackingUniverseOrigin'>ETrackingUniverseOrigin</a>, fPredictedSecondsToPhotonsFromNow: <a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_float.html' title='std::os::raw::c_float'>c_float</a>, pTrackedDevicePoseArray: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='struct' href='../openvr_sys/struct.Struct_TrackedDevicePose_t.html' title='openvr_sys::Struct_TrackedDevicePose_t'>Struct_TrackedDevicePose_t</a>, unTrackedDevicePoseArrayCount: <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>)&gt;,
+    pub ResetSeatedZeroPose: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn()&gt;,
+    pub GetSeatedZeroPoseToStandingAbsoluteTrackingPose: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn() -&gt; <a class='struct' href='../openvr_sys/struct.Struct_HmdMatrix34_t.html' title='openvr_sys::Struct_HmdMatrix34_t'>Struct_HmdMatrix34_t</a>&gt;,
+    pub GetRawZeroPoseToStandingAbsoluteTrackingPose: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn() -&gt; <a class='struct' href='../openvr_sys/struct.Struct_HmdMatrix34_t.html' title='openvr_sys::Struct_HmdMatrix34_t'>Struct_HmdMatrix34_t</a>&gt;,
+    pub GetSortedTrackedDeviceIndicesOfClass: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(eTrackedDeviceClass: <a class='type' href='../openvr_sys/type.ETrackedDeviceClass.html' title='openvr_sys::ETrackedDeviceClass'>ETrackedDeviceClass</a>, punTrackedDeviceIndexArray: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='../openvr_sys/type.TrackedDeviceIndex_t.html' title='openvr_sys::TrackedDeviceIndex_t'>TrackedDeviceIndex_t</a>, unTrackedDeviceIndexArrayCount: <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>, unRelativeToTrackedDeviceIndex: <a class='type' href='../openvr_sys/type.TrackedDeviceIndex_t.html' title='openvr_sys::TrackedDeviceIndex_t'>TrackedDeviceIndex_t</a>) -&gt; <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>&gt;,
+    pub GetTrackedDeviceActivityLevel: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(unDeviceId: <a class='type' href='../openvr_sys/type.TrackedDeviceIndex_t.html' title='openvr_sys::TrackedDeviceIndex_t'>TrackedDeviceIndex_t</a>) -&gt; <a class='type' href='../openvr_sys/type.EDeviceActivityLevel.html' title='openvr_sys::EDeviceActivityLevel'>EDeviceActivityLevel</a>&gt;,
+    pub ApplyTransform: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pOutputPose: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='struct' href='../openvr_sys/struct.Struct_TrackedDevicePose_t.html' title='openvr_sys::Struct_TrackedDevicePose_t'>Struct_TrackedDevicePose_t</a>, pTrackedDevicePose: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='struct' href='../openvr_sys/struct.Struct_TrackedDevicePose_t.html' title='openvr_sys::Struct_TrackedDevicePose_t'>Struct_TrackedDevicePose_t</a>, pTransform: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='struct' href='../openvr_sys/struct.Struct_HmdMatrix34_t.html' title='openvr_sys::Struct_HmdMatrix34_t'>Struct_HmdMatrix34_t</a>)&gt;,
+    pub GetTrackedDeviceIndexForControllerRole: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(unDeviceType: <a class='type' href='../openvr_sys/type.ETrackedControllerRole.html' title='openvr_sys::ETrackedControllerRole'>ETrackedControllerRole</a>) -&gt; <a class='type' href='../openvr_sys/type.TrackedDeviceIndex_t.html' title='openvr_sys::TrackedDeviceIndex_t'>TrackedDeviceIndex_t</a>&gt;,
+    pub GetControllerRoleForTrackedDeviceIndex: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(unDeviceIndex: <a class='type' href='../openvr_sys/type.TrackedDeviceIndex_t.html' title='openvr_sys::TrackedDeviceIndex_t'>TrackedDeviceIndex_t</a>) -&gt; <a class='type' href='../openvr_sys/type.ETrackedControllerRole.html' title='openvr_sys::ETrackedControllerRole'>ETrackedControllerRole</a>&gt;,
+    pub GetTrackedDeviceClass: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(unDeviceIndex: <a class='type' href='../openvr_sys/type.TrackedDeviceIndex_t.html' title='openvr_sys::TrackedDeviceIndex_t'>TrackedDeviceIndex_t</a>) -&gt; <a class='type' href='../openvr_sys/type.ETrackedDeviceClass.html' title='openvr_sys::ETrackedDeviceClass'>ETrackedDeviceClass</a>&gt;,
+    pub IsTrackedDeviceConnected: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(unDeviceIndex: <a class='type' href='../openvr_sys/type.TrackedDeviceIndex_t.html' title='openvr_sys::TrackedDeviceIndex_t'>TrackedDeviceIndex_t</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;,
+    pub GetBoolTrackedDeviceProperty: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(unDeviceIndex: <a class='type' href='../openvr_sys/type.TrackedDeviceIndex_t.html' title='openvr_sys::TrackedDeviceIndex_t'>TrackedDeviceIndex_t</a>, prop: <a class='type' href='../openvr_sys/type.ETrackedDeviceProperty.html' title='openvr_sys::ETrackedDeviceProperty'>ETrackedDeviceProperty</a>, pError: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='../openvr_sys/type.ETrackedPropertyError.html' title='openvr_sys::ETrackedPropertyError'>ETrackedPropertyError</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;,
+    pub GetFloatTrackedDeviceProperty: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(unDeviceIndex: <a class='type' href='../openvr_sys/type.TrackedDeviceIndex_t.html' title='openvr_sys::TrackedDeviceIndex_t'>TrackedDeviceIndex_t</a>, prop: <a class='type' href='../openvr_sys/type.ETrackedDeviceProperty.html' title='openvr_sys::ETrackedDeviceProperty'>ETrackedDeviceProperty</a>, pError: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='../openvr_sys/type.ETrackedPropertyError.html' title='openvr_sys::ETrackedPropertyError'>ETrackedPropertyError</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_float.html' title='std::os::raw::c_float'>c_float</a>&gt;,
+    pub GetInt32TrackedDeviceProperty: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(unDeviceIndex: <a class='type' href='../openvr_sys/type.TrackedDeviceIndex_t.html' title='openvr_sys::TrackedDeviceIndex_t'>TrackedDeviceIndex_t</a>, prop: <a class='type' href='../openvr_sys/type.ETrackedDeviceProperty.html' title='openvr_sys::ETrackedDeviceProperty'>ETrackedDeviceProperty</a>, pError: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='../openvr_sys/type.ETrackedPropertyError.html' title='openvr_sys::ETrackedPropertyError'>ETrackedPropertyError</a>) -&gt; <a class='type' href='../openvr_sys/type.int32_t.html' title='openvr_sys::int32_t'>int32_t</a>&gt;,
+    pub GetUint64TrackedDeviceProperty: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(unDeviceIndex: <a class='type' href='../openvr_sys/type.TrackedDeviceIndex_t.html' title='openvr_sys::TrackedDeviceIndex_t'>TrackedDeviceIndex_t</a>, prop: <a class='type' href='../openvr_sys/type.ETrackedDeviceProperty.html' title='openvr_sys::ETrackedDeviceProperty'>ETrackedDeviceProperty</a>, pError: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='../openvr_sys/type.ETrackedPropertyError.html' title='openvr_sys::ETrackedPropertyError'>ETrackedPropertyError</a>) -&gt; <a class='type' href='../openvr_sys/type.uint64_t.html' title='openvr_sys::uint64_t'>uint64_t</a>&gt;,
+    pub GetMatrix34TrackedDeviceProperty: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(unDeviceIndex: <a class='type' href='../openvr_sys/type.TrackedDeviceIndex_t.html' title='openvr_sys::TrackedDeviceIndex_t'>TrackedDeviceIndex_t</a>, prop: <a class='type' href='../openvr_sys/type.ETrackedDeviceProperty.html' title='openvr_sys::ETrackedDeviceProperty'>ETrackedDeviceProperty</a>, pError: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='../openvr_sys/type.ETrackedPropertyError.html' title='openvr_sys::ETrackedPropertyError'>ETrackedPropertyError</a>) -&gt; <a class='struct' href='../openvr_sys/struct.Struct_HmdMatrix34_t.html' title='openvr_sys::Struct_HmdMatrix34_t'>Struct_HmdMatrix34_t</a>&gt;,
+    pub GetStringTrackedDeviceProperty: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(unDeviceIndex: <a class='type' href='../openvr_sys/type.TrackedDeviceIndex_t.html' title='openvr_sys::TrackedDeviceIndex_t'>TrackedDeviceIndex_t</a>, prop: <a class='type' href='../openvr_sys/type.ETrackedDeviceProperty.html' title='openvr_sys::ETrackedDeviceProperty'>ETrackedDeviceProperty</a>, pchValue: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>, unBufferSize: <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>, pError: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='../openvr_sys/type.ETrackedPropertyError.html' title='openvr_sys::ETrackedPropertyError'>ETrackedPropertyError</a>) -&gt; <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>&gt;,
+    pub GetPropErrorNameFromEnum: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(error: <a class='type' href='../openvr_sys/type.ETrackedPropertyError.html' title='openvr_sys::ETrackedPropertyError'>ETrackedPropertyError</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>&gt;,
+    pub PollNextEvent: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(pEvent: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='struct' href='../openvr_sys/struct.Struct_VREvent_t.html' title='openvr_sys::Struct_VREvent_t'>Struct_VREvent_t</a>, uncbVREvent: <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;,
+    pub PollNextEventWithPose: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(eOrigin: <a class='type' href='../openvr_sys/type.ETrackingUniverseOrigin.html' title='openvr_sys::ETrackingUniverseOrigin'>ETrackingUniverseOrigin</a>, pEvent: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='struct' href='../openvr_sys/struct.Struct_VREvent_t.html' title='openvr_sys::Struct_VREvent_t'>Struct_VREvent_t</a>, uncbVREvent: <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>, pTrackedDevicePose: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='../openvr_sys/type.TrackedDevicePose_t.html' title='openvr_sys::TrackedDevicePose_t'>TrackedDevicePose_t</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;,
+    pub GetEventTypeNameFromEnum: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(eType: <a class='type' href='../openvr_sys/type.EVREventType.html' title='openvr_sys::EVREventType'>EVREventType</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>&gt;,
+    pub GetHiddenAreaMesh: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(eEye: <a class='type' href='../openvr_sys/type.EVREye.html' title='openvr_sys::EVREye'>EVREye</a>) -&gt; <a class='struct' href='../openvr_sys/struct.Struct_HiddenAreaMesh_t.html' title='openvr_sys::Struct_HiddenAreaMesh_t'>Struct_HiddenAreaMesh_t</a>&gt;,
+    pub GetControllerState: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(unControllerDeviceIndex: <a class='type' href='../openvr_sys/type.TrackedDeviceIndex_t.html' title='openvr_sys::TrackedDeviceIndex_t'>TrackedDeviceIndex_t</a>, pControllerState: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='../openvr_sys/type.VRControllerState_t.html' title='openvr_sys::VRControllerState_t'>VRControllerState_t</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;,
+    pub GetControllerStateWithPose: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(eOrigin: <a class='type' href='../openvr_sys/type.ETrackingUniverseOrigin.html' title='openvr_sys::ETrackingUniverseOrigin'>ETrackingUniverseOrigin</a>, unControllerDeviceIndex: <a class='type' href='../openvr_sys/type.TrackedDeviceIndex_t.html' title='openvr_sys::TrackedDeviceIndex_t'>TrackedDeviceIndex_t</a>, pControllerState: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='../openvr_sys/type.VRControllerState_t.html' title='openvr_sys::VRControllerState_t'>VRControllerState_t</a>, pTrackedDevicePose: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='struct' href='../openvr_sys/struct.Struct_TrackedDevicePose_t.html' title='openvr_sys::Struct_TrackedDevicePose_t'>Struct_TrackedDevicePose_t</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;,
+    pub TriggerHapticPulse: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(unControllerDeviceIndex: <a class='type' href='../openvr_sys/type.TrackedDeviceIndex_t.html' title='openvr_sys::TrackedDeviceIndex_t'>TrackedDeviceIndex_t</a>, unAxisId: <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>, usDurationMicroSec: <a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_ushort.html' title='std::os::raw::c_ushort'>c_ushort</a>)&gt;,
+    pub GetButtonIdNameFromEnum: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(eButtonId: <a class='type' href='../openvr_sys/type.EVRButtonId.html' title='openvr_sys::EVRButtonId'>EVRButtonId</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>&gt;,
+    pub GetControllerAxisTypeNameFromEnum: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(eAxisType: <a class='type' href='../openvr_sys/type.EVRControllerAxisType.html' title='openvr_sys::EVRControllerAxisType'>EVRControllerAxisType</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>&gt;,
+    pub CaptureInputFocus: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn() -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;,
+    pub ReleaseInputFocus: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn()&gt;,
+    pub IsInputFocusCapturedByAnotherProcess: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn() -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;,
+    pub DriverDebugRequest: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;unsafe extern fn(unDeviceIndex: <a class='type' href='../openvr_sys/type.TrackedDeviceIndex_t.html' title='openvr_sys::TrackedDeviceIndex_t'>TrackedDeviceIndex_t</a>, pchRequest: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>, pchResponseBuffer: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='type' href='https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html' title='std::os::raw::c_char'>c_char</a>, unResponseBufferSize: <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>) -&gt; <a class='type' href='../openvr_sys/type.uint32_t.html' title='openvr_sys::uint32_t'>uint32_t</a>&gt;,
+    pub PerformFirmwareUpdate: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn(unDeviceIndex: <a class='type' href='../openvr_sys/type.TrackedDeviceIndex_t.html' title='openvr_sys::TrackedDeviceIndex_t'>TrackedDeviceIndex_t</a>) -&gt; <a class='type' href='../openvr_sys/type.EVRFirmwareError.html' title='openvr_sys::EVRFirmwareError'>EVRFirmwareError</a>&gt;,
+    pub AcknowledgeQuit_Exiting: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn()&gt;,
+    pub AcknowledgeQuit_UserPrompt: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;extern fn()&gt;,
+}</pre><h2 class='fields'>Fields</h2>
+<table><tr class='stab '>
+                             <td id='structfield.GetRecommendedRenderTargetSize'><code>GetRecommendedRenderTargetSize</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetProjectionMatrix'><code>GetProjectionMatrix</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetProjectionRaw'><code>GetProjectionRaw</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.ComputeDistortion'><code>ComputeDistortion</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetEyeToHeadTransform'><code>GetEyeToHeadTransform</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetTimeSinceLastVsync'><code>GetTimeSinceLastVsync</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetD3D9AdapterIndex'><code>GetD3D9AdapterIndex</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetDXGIOutputInfo'><code>GetDXGIOutputInfo</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.IsDisplayOnDesktop'><code>IsDisplayOnDesktop</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.SetDisplayVisibility'><code>SetDisplayVisibility</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetDeviceToAbsoluteTrackingPose'><code>GetDeviceToAbsoluteTrackingPose</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.ResetSeatedZeroPose'><code>ResetSeatedZeroPose</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetSeatedZeroPoseToStandingAbsoluteTrackingPose'><code>GetSeatedZeroPoseToStandingAbsoluteTrackingPose</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetRawZeroPoseToStandingAbsoluteTrackingPose'><code>GetRawZeroPoseToStandingAbsoluteTrackingPose</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetSortedTrackedDeviceIndicesOfClass'><code>GetSortedTrackedDeviceIndicesOfClass</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetTrackedDeviceActivityLevel'><code>GetTrackedDeviceActivityLevel</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.ApplyTransform'><code>ApplyTransform</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetTrackedDeviceIndexForControllerRole'><code>GetTrackedDeviceIndexForControllerRole</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetControllerRoleForTrackedDeviceIndex'><code>GetControllerRoleForTrackedDeviceIndex</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetTrackedDeviceClass'><code>GetTrackedDeviceClass</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.IsTrackedDeviceConnected'><code>IsTrackedDeviceConnected</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetBoolTrackedDeviceProperty'><code>GetBoolTrackedDeviceProperty</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetFloatTrackedDeviceProperty'><code>GetFloatTrackedDeviceProperty</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetInt32TrackedDeviceProperty'><code>GetInt32TrackedDeviceProperty</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetUint64TrackedDeviceProperty'><code>GetUint64TrackedDeviceProperty</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetMatrix34TrackedDeviceProperty'><code>GetMatrix34TrackedDeviceProperty</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetStringTrackedDeviceProperty'><code>GetStringTrackedDeviceProperty</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetPropErrorNameFromEnum'><code>GetPropErrorNameFromEnum</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.PollNextEvent'><code>PollNextEvent</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.PollNextEventWithPose'><code>PollNextEventWithPose</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetEventTypeNameFromEnum'><code>GetEventTypeNameFromEnum</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetHiddenAreaMesh'><code>GetHiddenAreaMesh</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetControllerState'><code>GetControllerState</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetControllerStateWithPose'><code>GetControllerStateWithPose</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.TriggerHapticPulse'><code>TriggerHapticPulse</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetButtonIdNameFromEnum'><code>GetButtonIdNameFromEnum</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.GetControllerAxisTypeNameFromEnum'><code>GetControllerAxisTypeNameFromEnum</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.CaptureInputFocus'><code>CaptureInputFocus</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.ReleaseInputFocus'><code>ReleaseInputFocus</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.IsInputFocusCapturedByAnotherProcess'><code>IsInputFocusCapturedByAnotherProcess</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.DriverDebugRequest'><code>DriverDebugRequest</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.PerformFirmwareUpdate'><code>PerformFirmwareUpdate</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.AcknowledgeQuit_Exiting'><code>AcknowledgeQuit_Exiting</code></td><td></td></tr><tr class='stab '>
+                             <td id='structfield.AcknowledgeQuit_UserPrompt'><code>AcknowledgeQuit_UserPrompt</code></td><td></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../openvr_sys/struct.Struct_VR_IVRSystem_FnTable.html' title='openvr_sys::Struct_VR_IVRSystem_FnTable'>Struct_VR_IVRSystem_FnTable</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; Self</code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><span class="since">1.0.0</span></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../openvr_sys/struct.Struct_VR_IVRSystem_FnTable.html' title='openvr_sys::Struct_VR_IVRSystem_FnTable'>Struct_VR_IVRSystem_FnTable</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; Self</code></h4>
+</div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='struct' href='../openvr_sys/struct.Struct_VR_IVRSystem_FnTable.html' title='openvr_sys::Struct_VR_IVRSystem_FnTable'>Struct_VR_IVRSystem_FnTable</a></code></h3><div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "openvr_sys";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

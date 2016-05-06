@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Eye",""]],"struct":[["DistortionCoordinates",""],["Position",""],["Rectangle",""],["Size",""],["TextureBounds",""]]});
